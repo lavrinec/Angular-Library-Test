@@ -3,5 +3,9 @@
   "dest": "../../dist/element-lib",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@angular/elements",
+    "tslib"
+  ]
 }
