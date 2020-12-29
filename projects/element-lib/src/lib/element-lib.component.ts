@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-element-lib',
   template: `
     <div>
-      <p>element-lib works:: {{ counter }}</p>
+      <p>element works:: {{ someString }} {{ counter }}</p>
       <button (click)="counter=counter+1">Increase</button>
     </div>
   `,
@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElementLibComponent implements OnInit {
 
+  @Input() someString = '';
   counter = 0;
 
   constructor() { }
